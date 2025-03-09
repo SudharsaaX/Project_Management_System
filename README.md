@@ -71,10 +71,7 @@ You can deploy the `dist/` folder on **Vercel**, **Netlify**, or any static host
 4. Push to your branch (`git push origin feature-branch`)
 5. Open a Pull Request
 
-## 📜 License
-This project is licensed under the **MIT License**.
-
 ## 📧 Contact
 For any queries, feel free to reach out:
 - **GitHub**: [SudharsaaX](https://github.com/SudharsaaX)
-- **Email**: your-email@example.com
+- **Email**: sudharsan1527@gmail.com
