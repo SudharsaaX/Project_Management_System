@@ -1,21 +1,80 @@
-📌 Project Management System 🚀 Overview The Project Management System is a full-stack web application designed to simplify project tracking, task management, and collaboration. Built using the MERN stack, it enables teams to create projects, assign tasks, track progress, and streamline workflows. The tool features real-time task updates, dark mode synchronization, and a user-friendly interface to boost productivity.
+# Project Management System
 
-🔥 Key Features ✅ Project & Task Management – Create, update, and delete projects/tasks with real-time tracking. ✅ User Authentication – Secure login and signup with Firebase Authentication. ✅ Dark Mode Sync – Maintains dark mode settings across all pages using React Context API. ✅ Real-time Updates – Firestore NoSQL database ensures instant updates for all users. ✅ Interactive UI/UX – React.js & Styled Components for a modern and intuitive experience. ✅ Role-Based Access Control – Ensures users can only access permitted functionalities (future scope).
+## 📌 Overview
+The **Project Management System** is a frontend-only web application built using **React** and **Vite**, designed to help users organize and manage their projects effectively. It features task creation, tracking, and a clean UI with smooth animations.
 
-🛠️ Technology Stack Frontend React.js – For building an interactive and dynamic UI. Vite – Lightning-fast build tool for React. React Router – For client-side navigation. Styled Components – For styling with dynamic themes. Context API – To manage global states (e.g., Dark Mode). Backend Node.js & Express.js – REST API server. Firebase Firestore – NoSQL database for storing projects and tasks. Firebase Authentication – For secure user management. Other Tools & Libraries Git & GitHub – Version control and collaboration. Axios – For making API requests. ESLint & Prettier – Code quality and formatting. 📂 Folder Structure perl Copy Edit project-management-system/ │── backend/ # Express.js server │ ├── server.js # Main server file │ ├── routes/ # API endpoints │ ├── models/ # Database schemas (if applicable) │ ├── config/ # Configuration files │ └── package.json # Backend dependencies │ │── frontend/ # React.js application │ ├── src/ │ │ ├── components/ # Reusable UI components │ │ ├── context/ # Dark Mode & global states │ │ ├── pages/ # Dashboard, Tasks, Projects, Profile, Settings │ │ ├── firebase.js # Firebase configuration │ │ ├── App.js # Main app component │ │ └── index.js # ReactDOM rendering │ ├── public/ # Static assets │ ├── package.json # Frontend dependencies │ └── vite.config.js # Vite configuration │ │── README.md # Project documentation │── .gitignore # Files to ignore in version control │── LICENSE # Open-source license 🚀 Installation & Setup 🔹 Clone the Repository sh Copy Edit git clone https://github.com/SudharsaaX/Project_Management_System.git cd Project_Management_System 🔹 Backend Setup Navigate to the backend folder: sh Copy Edit cd backend Install dependencies: sh Copy Edit npm install Start the server: sh Copy Edit node server.js The backend will run on http://localhost:5000/. 🔹 Frontend Setup Navigate to the frontend folder: sh Copy Edit cd ../frontend Install dependencies: sh Copy Edit npm install Start the development server: sh Copy Edit npm run dev The frontend will be accessible at http://localhost:5173/. 📡 Firebase Configuration To use Firebase services (Authentication & Firestore Database), follow these steps:
+## 🚀 Features
+- **Create and Manage Tasks**: Add, edit, and delete tasks with ease.
+- **Project Organization**: Group tasks by project for better management.
+- **Animations & UI Enhancements**: A visually appealing interface with creative buttons.
+- **Firebase Integration**: Store and retrieve form data for tasks.
 
-Go to the Firebase Console.
+## 🛠️ Tech Stack
+- **Frontend**: React, Vite
+- **State Management**: React Context API (or Redux if applicable)
+- **Database**: Firebase (for data storage)
 
-Create a new project and enable Firestore & Authentication.
+## 📂 Folder Structure
+```
+Project_Management_System/
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Main pages (Dashboard, Tasks, etc.)
+│   ├── firebase.js        # Firebase configuration
+│   ├── App.jsx            # Main application component
+│   ├── main.jsx           # Entry point
+│   ├── styles/            # CSS or Styled Components
+├── public/                # Static assets
+├── package.json           # Dependencies and scripts
+├── vite.config.js         # Vite configuration
+└── README.md              # Project documentation
+```
 
-Get the Firebase config object from your project settings.
+## 🔧 Installation & Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/SudharsaaX/Project_Management_System.git
+   cd Project_Management_System
+   ```
 
-Replace the configuration in firebase.js inside the frontend/src/ folder:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-js Copy Edit import { initializeApp } from "firebase/app";
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-const firebaseConfig = { apiKey: "YOUR_API_KEY", authDomain: "YOUR_AUTH_DOMAIN", projectId: "YOUR_PROJECT_ID", storageBucket: "YOUR_STORAGE_BUCKET", messagingSenderId: "YOUR_MESSAGING_SENDER_ID", appId: "YOUR_APP_ID", };
+4. **Set up Firebase**
+   - Create a Firebase project.
+   - Configure Firestore and enable necessary services.
+   - Update `firebase.js` with your Firebase configuration.
 
-const app = initializeApp(firebaseConfig); export default app; 🚀 Usage Guide 1️⃣ Creating a Project Navigate to the Dashboard. Click "Create Project" and enter the details. The project will be stored in Firestore. 2️⃣ Adding Tasks Open a project and go to the Tasks Page. Click "Add Task", enter the task name, and submit. The task gets saved in Firestore and is displayed instantly. 3️⃣ Managing Tasks Mark tasks as Completed ✅ or Pending ❌. Delete tasks if no longer needed. 4️⃣ Dark Mode Toggle Click on 🌙 Dark Mode to enable dark mode. The setting persists across pages using React Context API. 📝 Future Enhancements 🚀 AI-Powered Task Prioritization – Intelligent task sorting based on deadlines & workload. 🚀 Real-Time Chat Integration – Improve team collaboration. 🚀 Gantt Chart Visualization – Interactive progress tracking. 🚀 Mobile App Version – React Native support for mobile users.
+## 📌 Firebase Integration Guide
+- Ensure that **Firebase Firestore** is enabled.
+- Modify `firebase.js` with the Firebase SDK credentials.
+- Use Firebase functions to store and retrieve tasks.
 
-🤝 Contributors 👨‍💻 Sudharsan S. – Lead Developer
+## 🚀 Deployment
+To deploy the project:
+```bash
+npm run build
+```
+You can deploy the `dist/` folder on **Vercel**, **Netlify**, or any static hosting platform.
+
+## 🤝 Contributing
+1. Fork the repository
+2. Create a new branch (`feature-branch`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to your branch (`git push origin feature-branch`)
+5. Open a Pull Request
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+## 📧 Contact
+For any queries, feel free to reach out:
+- **GitHub**: [SudharsaaX](https://github.com/SudharsaaX)
+- **Email**: your-email@example.com
