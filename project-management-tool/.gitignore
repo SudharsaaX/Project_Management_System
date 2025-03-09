@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build directories
+/build
+/dist
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore sensitive data
+backend/serviceAccountKey.json
